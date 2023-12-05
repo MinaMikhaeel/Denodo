@@ -1,0 +1,5 @@
+﻿CREATE OR REPLACE DATABASE training_usecase '';
+
+ALTER DATABASE training_usecase
+  CHARSET DEFAULT;
+

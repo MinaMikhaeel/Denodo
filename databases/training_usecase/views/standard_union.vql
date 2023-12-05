@@ -1,0 +1,2 @@
+﻿CREATE OR REPLACE VIEW standard_union AS SELECT invoice_id, date_invoice, order_id, date_placed, date_delivered, date_closed, first_name, last_name, email, address, country, postal_code, phone, amount, date_modified FROM (SELECT * FROM excel2015 EXTENDED UNION ALL SELECT date_placed, phone, order_id, postal_code, email, first_name, last_name, address, date_closed, date_modified, amount, invoice_id, date_invoice, date_delivered, country FROM excel2020);
+
